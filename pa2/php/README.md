@@ -14,6 +14,6 @@ should change into `ErrorLog "/var/www/html/GroupXX/admin/pa2_pak0sbtdg1i/php/ht
 
   When you do this, you will have to modify two lines of httpd.conf under conf folder. 
 
-For example, if your group ports for pa1 are `5697`  `6697`
+  For example, if your group ports for pa1 are `5697`  `6697`
 The orginal line 43&44 in httpd.conf: `Listen 5697` `Listen 6697`
 should change into `Listen 5897` `Listen 6897`
