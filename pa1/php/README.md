@@ -4,21 +4,21 @@
 
 1) Log into your machine: `ssh UNIQNAME@eecs485-NUMBER.eecs.umich.edu`
 
-2) `cd ../GROUPNAME`
+2) `cd /var/www/html/GROUPNAME`
 
-3) `git clone git@github.com:EECS485/admin.git`
+3) `git clone git@github.com:EECS485-Fall2014/admin.git`
 
 4) `chown -R UNIQNAME:GROUPNAME admin`
 
 If you have trouble cloning (`fatal: Could not read from remote repository.`) then follow [this tutorial to set up your ssh keys with Github](https://help.github.com/articles/generating-ssh-keys).
 
-5) `cd admin/php`
+5) `cd admin/pa1/php`
 
 6) `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
 
 You must provide "mattman" "4801" and "4802" in that command, just replace the constants with your team's. Refer to conf/README.md if you have trouble configuring two ports, or just want one.
 
-7) `httpd -f /home/GROUPNAME/admin/php/conf/httpd.conf -k start`
+7) `httpd -f /var/www/html/GROUPNAME/admin/pa1/php/conf/httpd.conf -k start`
 
 You can always run `.... -k stop` or `.... -k restart` to stop or restart Apache.
 
@@ -36,18 +36,16 @@ Start by editing html/index.php and then html/templates/templates/
 
 ### App Architecture
 
-![PHP Architecture](https://raw.github.com/EECS485/admin/master/php/PHP_Architecture.png)
+![PHP Architecture](https://raw.github.com/EECS485-Fall2014/admin/master/pa1/php/PHP_Architecture.png)
 
 ### Directory Structure
 
 * conf/
  * Apache Config Directory
  * EDIT THIS
- * Go to all the TODOs and make the appropriate changes
+ * Go to all the TODOs and make the appropriate changes (also of these can be handled by setup.sh, so you don't need to worry about it)
 
-* html/
- * Your code here for PA1
-
+* html/ 
 * run/
  * An apache folder that you need. Don't mess with it.
 
@@ -67,4 +65,4 @@ Start by editing html/index.php and then html/templates/templates/
 
 * setup.sh
  * Run this script with your group name and desired port number to setup apache
- * Example: `bash setup.sh group1 2520`
+ * Example: `bash setup.sh mattman GROUPNAME 4801 PORTNUMBER1 4802 PORTNUMBER2`
