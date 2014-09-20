@@ -17,3 +17,7 @@ should change into `ErrorLog "/var/www/html/GroupXX/admin/pa2_pak0sbtdg1i/php/ht
   For example, if your group ports for pa1 are `5697`  `6697`
 The orginal line 43&44 in httpd.conf: `Listen 5697` `Listen 6697`
 should change into `Listen 5897` `Listen 6897`
+
+
+Finally, run `httpd -f /var/www/html/GROUPNAME/admin/PA2FOLDER/php/conf/httpd.conf -k start`
+Then your baseline pa2 site is good to go. Good luck!
