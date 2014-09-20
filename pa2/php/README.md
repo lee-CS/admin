@@ -1,4 +1,4 @@
-### Two Quick Note if you are using PHP/smarty
+### Two Quick Notes if you are using PHP/smarty
 
 1. Since you are extending functionality from your website in PA1, copy and paste your previous code into the new directory.
 
