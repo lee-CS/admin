@@ -42,7 +42,7 @@ In some of the cases above, the user is redirected to the Login page. This Login
 **Your code should observe the following rules about access privileges:**
 * Public albums are _accessible_ to both logged in users and unauthenticated visitors.
 * Private albums are _accessible_ only to those users that have explicit access to that
-album. Users will have access to user's private album if
+album. Users will have access to other user's private album if
 and only if there exists a tuple (a, u) in the *AlbumAccess* relation
 (see below).
 * A picture that does not belong to any public albums is accessible to a user if and only if it belongs to at least one private album that _u_ has permission to access to.
