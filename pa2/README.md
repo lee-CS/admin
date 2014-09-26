@@ -115,6 +115,7 @@ In order for sessions to work properly however a secret key must be set. Please 
 
 What follows is a list of the files that you should create in your
 application. You should have created some of these for PA1.
+*page is either in a public state (no session involving) or sensitive state (need session to manage page).*
 
 #### Default home page:`/` [public]
 
@@ -135,6 +136,9 @@ checking to ensure that the password is "good enough."  You should
 You should also check that the two password fields match.  You should
 perform this test at both the client- and server-side.  For this test *only*
 you can use a small JavaScript function.
+*PHP is a server-side scripting language which means PHP is executed by the web server when the user requests a document.
+JavaScript is mainly a client-side scripting, normally embedded within HTML. it will be executed on client. 
+So you need to both check the password in PHP and in HTML(using JS)*
 
 If a session already exists redirect the user to `/user/edit`.
 
@@ -168,7 +172,7 @@ public homepage.
 This is your `/albums/edit` page from PA1. It allows the user to
 add new albums, view existing albums, delete them or edit them.
 Remember that deleting an album should also involve deleting
-pictures in the album.
+pictures in the album.*note that you can only see those albums you created*
 
 #### Edit Album page:`/album/edit` [sensitive]
 ￼￼￼
