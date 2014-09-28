@@ -1,7 +1,7 @@
 # ￼Assignment 2: Authentication and Sessions
 ### Due Thursday, Oct 2, 2014, at 11:55 PM.
 
-For this PA, you will continue working on the photo album website developed in PA1. However, do not touch the files in the pa1 sub-directory. Make another sub-directory called pa2, and copy the files from pa1 into the pa2 sub-directory and work on the files there. By the end of this programming assignment you will learn how to authenticate users and maintain sessions. Also, we are using new databases for this project, databases name: groupxxpa2,
+For this PA, you will continue working on the photo album website developed in PA1. However, do not touch the files in the pa1 sub-directory. Make another sub-directory called pa2, and copy the files from pa1 into the pa2 sub-directory and work on the files there. By the end of this programming assignment you will learn how to authenticate users and maintain sessions. *Also, we are using new databases for this project, databases name: groupxxpa2.*
 
 ## Part 1: Getting started
 
