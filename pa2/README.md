@@ -212,10 +212,10 @@ Perhaps obviously, authentication issues are present throughout this assignment.
 In order to view a sensitive page, the user must be authenticated. You should use 
 a form with a username/password that is shipped to a server-side script that 
 tests the information against the database.
-Logging in should yield one of three situations, each of which should be handled differently.
+Logging in should yield one of two situations, each of which should be handled differently.
 
-* Username OR password are invalid: Complain that the user-password combination is invalid.
-* Username-password combo is valid: Take the user to the logged in home page.
+* Username is invalid: Complain that the username does not exist.
+* Username-password combo is valid: Complain that Username-password combo is valid.
 
 ## Part 4: Validation
 
