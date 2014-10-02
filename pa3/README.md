@@ -189,6 +189,8 @@ please separate every three digits using a comma. For example, if the miles is 1
 We provided the skeleton code framework for you, and your job is to fill all the empty functions in the repo. 
 Of course, feel free to add files to the repo. You can change anything as long as it works!
 
+**[An important notice]**: Please do use Github to keep track of your coding history. We will check your commit history on github to make sure. If you do not use Github, we will take off 10 points from the total you will get. 
+
 For grading this project, we will clone your Github repo to our local machine. The code sitting in your pa3 repo will be what we clone. The grade is based on whether the above mentioned four parts work or not. If all of the four functions work, you have nothing to worry about!
 
 
