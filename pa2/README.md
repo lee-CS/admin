@@ -215,7 +215,8 @@ tests the information against the database.
 Logging in should yield one of two situations, each of which should be handled differently.
 
 * Username is invalid: Complain that the username does not exist.
-* Username-password combo is valid: Complain that Username-password combo is valid.
+* Username-password combo is valid: Complain that Username-password combo is invalid.
+**(we will only check 2nd situation when grading)**
 
 ## Part 4: Validation
 
