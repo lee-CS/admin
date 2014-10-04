@@ -194,10 +194,11 @@ Of course, feel free to add files to the repo. You can change anything as long a
 For grading this project, we will clone your Github repo to our local machine. The code sitting in your pa3 repo will be what we clone. The grade is based on whether the above mentioned four parts work or not. If all of the four functions work, you have nothing to worry about!
 
 Finally, your README.md file (put it in the root directory of your project dir) should contain the following: 
-1. Group number. 
-2. list of (name , unique name,  "agreed upon" contributions)
-3. Details about the extra credit parts you implement.  
-4. Anything you want us to know, e.g. how many late days you use.
+
+* Group number. 
+* Info of all the group members (including name , unique name,  "agreed upon" contributions)
+* Details about the extra credit parts you implement.  
+* Anything you want us to know, e.g. how many late days you use.
  
 
 
