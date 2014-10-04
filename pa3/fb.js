@@ -26,9 +26,9 @@ var Facebook = function(map, view, callback) {
 	}
 
 	this.search = function (id) {
-		// get "photos", "checkins", and "statuses" with places attached
+		// get "photos" and "statuses" with places attached
 		// pass the data to the map with map.passToMap({...})
-		// after *all* three API calls have returned, call map.renderAllPoints()
+		// after *all* two API calls have returned, call map.renderAllPoints()
 		// yay! async :) 
 
 		// be sure your scopes are right during login
