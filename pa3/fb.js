@@ -49,8 +49,11 @@ var Facebook = function(map, view, callback) {
 			FB.init({
 				appId      : 'YOURKEYHERE',	// App ID from the app dashboard
 				channelUrl : '/channel.html', 	// Channel file for x-domain comms
-				status     : true,				// Check Facebook Login status
-				xfbml      : true				// Look for social plugins on the page
+				status     : true,
+				xfbml      : true,
+				version    : 'v2.0',
+				cookie     : true,
+				oauth      : true
 			});
 
 			FB.getLoginStatus(function(response) {
