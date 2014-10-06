@@ -33,8 +33,8 @@ So, for example, if "ott" is typed I should see "Otto Sipe" in the dropdown. You
 
 #### Rendered Path
 
-Once the user has selected a Facebook entry, you should render their
-checkin history on screen.  This entails grabbing the user's checkin
+You should be able to render the login user's checkin history 
+on screen.  This entails grabbing the user's checkin
 history, getting the relevant lat/long pairs for each checkin, and
 animating them onscreen.  You should implement the "drop icon, move,
 draw line" sequence. 
@@ -44,7 +44,7 @@ draw line" sequence.
 #### Miles Calculator
 
 At the bottom right of the browser, a counter should display the miles
-the Facebook friend has "travelled" so far.  It should update as the
+the login user has "travelled" so far.  It should update as the
 path is being drawn onscreen. It should hold an integer value (with
 commas) of the total distance that this person has traveled, according
 to the dataset.  
@@ -111,11 +111,10 @@ Please **DO NOT** use your eecs485 server for this project, because it will requ
 
 8) Grab your App ID and paste it in `fb.js` as the value of the `FBAppId`
 
-From here, follow the comments in the file. Note that there are three
+From here, follow the comments in the file. Note that there are two
 API "endpoints" you should access in order to gather data about a user:
 
 * Photos (with a geolocation tag)
-* Checkins
 * Statuses (with a geolocation tag)
 
 #### `map.js`
@@ -173,18 +172,21 @@ We will grade on the following four parts:
 1. A working website that connects to Facebook (20 Points) 
     - Login: click "Login", you should be able to login to facebook. After logging in, hide the "Login" button and show the "Logout" button. 
     - Logout: click  "Logout", you should be able to logout facebook. After logging out, hide the "Logout" button and show the "Login" button. 
+    - Spinner: show the spinner when anything is loading.
 2. Typeahead (35 Points)
     - Dropdown list: when type something in the search box, the dropdown list shows a list of friend names. 
     - Typeahead: when type any new characters in the search box, the content in the dropdown list changes accordingly. 
     - Correctness: the typeahead function should work properly for the prefixes searching, and the friend names returned should be ranked alphabetically. For example, `Jessica Jiang` should come before `Jessica Xu` and `Jessica Xu` should come before `Matt Jiang`. 
     - Profile pic: when click a friend in the dropdown list, show the profile pic of the currect selected friend at the bottom (right before miles). 
 3. Rendered Path on Google Map (25 Points) 
-    - When select a friend from the dropdown list, show the places as pins with polylines on Google Map. 
-    - When select a different friend, Google map changes accordingly. 
+    - When a user logs in, show this login user's places as pins with polylines on Google Map. 
+    - When a user logs out, clear all pins and polylines on Google Map. 
+    - The function should work whenever a new user logs in. 
 4. Miles calculator (20 Points)
-    - When select a freind from the dropdown list, show the calculated miles at the bottom. Also, 
+    - When a user logs in, show the calculated miles of the places at the bottom. Also, 
 please separate every three digits using a comma. For example, if the miles is 12517, please show `12,517`. 
-    - When select a different friend, the miles change accordingly.
+    - When a user logs out,  clear the miles. 
+    - The function should work whenever a new user logs in. 
 
 We provided the skeleton code framework for you, and your job is to fill all the empty functions in the repo. 
 Of course, feel free to add files to the repo. You can change anything as long as it works!
