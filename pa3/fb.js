@@ -48,7 +48,7 @@ var Facebook = function(map, view, callback) {
 	
 			// init the FB JS SDK
 			FB.init({
-				appId      : 'YOURKEYHERE',	// App ID from the app dashboard
+				appId      : '569854653143102',	// App ID from the app dashboard
 				channelUrl : '/channel.html', 	// Channel file for x-domain comms
 				status     : true,
 				xfbml      : true,
